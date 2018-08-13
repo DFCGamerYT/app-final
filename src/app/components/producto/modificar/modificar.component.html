@@ -1,0 +1,17 @@
+<form [formGroup]="formUpdate" (submit)="modificarProducto(formUpdate.value)">
+  <div class="form-group">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" formControlName="nombre" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Precio:</label>
+    <input type="number" name="precio" formControlName="precio" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Cantidad:</label>
+    <input type="number" name="cantidad" formControlName="cantidad" class="form-control">
+  </div>
+  <div class="form-group">
+    <button class="btn btn-success">Guardar</button>
+  </div>
+</form>

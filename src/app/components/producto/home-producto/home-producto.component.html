@@ -1,0 +1,33 @@
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Editar</th>
+      <th scope="col">Eliminar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- <tr> -->
+    <ng-container *ngFor="let producto of productos, let i = index">
+      <tr *ngIf="producto.estado == 1">
+        <th scope="row">{{producto.id}}</th>
+        <td>{{producto.nombre}}</td>
+        <td>{{producto.precio | currency: 'COP'}}</td>
+        <td>{{producto.cantidad}}</td>
+        <td>
+          <a [routerLink]="[producto.id,'modificar']" class="btn btn-success">Modificar</a>
+        </td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteProductoP(i)">Preventivo</button> 
+          <button class="btn btn-danger" (click)="deleteProductD(producto.id)">Definitivo</button>
+        </td>
+      </tr>
+    </ng-container>
+    <!-- </tr> -->
+  </tbody>
+</table>
+<hr>
+<a routerLink="crear">Desea Guardar Nuevo Producto?</a>

@@ -1,0 +1,12 @@
+<div class="alert alert-danger" *ngIf="mensaje">{{mensaje}}</div>
+<form [formGroup]="formLogin" (submit)="getLogin(formLogin.value)">
+  <div class="form-group">
+    <label for="">Nickname: </label>
+    <input type="text" name="nickname" formControlName="nickname" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="">Password: </label>
+    <input type="text" name="password" formControlName="password" class="form-control">
+  </div>
+  <button class="btn btn-primary">Log In</button>
+</form>
