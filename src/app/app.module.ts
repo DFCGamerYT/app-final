@@ -6,13 +6,11 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { HttpClientModule } from '@angular/common/http'; 
 
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { Autenticador } from './components/login/server/autenticador';
-
-import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -25,8 +23,7 @@ import { ChartsModule } from 'ng2-charts';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    ChartsModule
+    ReactiveFormsModule
   ],
   providers: [Autenticador],
   bootstrap: [AppComponent]

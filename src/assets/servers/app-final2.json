@@ -15,10 +15,10 @@
       "id": 4
     },
     {
-      "estado": 1,
       "nombre": "Medias",
       "precio": 100000,
-      "cantidad": 5,
+      "cantidad": 100,
+      "estado": 1,
       "id": 6
     },
     {
@@ -32,8 +32,58 @@
       "estado": 1,
       "nombre": "Pantalon",
       "precio": 1000000,
-      "cantidad": "10",
+      "cantidad": 15,
       "id": 8
+    },
+    {
+      "nombre": "Chaquetas",
+      "precio": 10000,
+      "cantidad": 35,
+      "estado": 1,
+      "id": 9
+    },
+    {
+      "nombre": "Camisa",
+      "precio": 100000,
+      "cantidad": 20,
+      "estado": 1,
+      "id": 10
+    },
+    {
+      "nombre": "Buzo",
+      "precio": 100000,
+      "cantidad": 35,
+      "estado": 1,
+      "id": 11
+    },
+    {
+      "nombre": "Gafas",
+      "precio": 100000,
+      "cantidad": 10,
+      "estado": 1,
+      "id": 12
+    }
+  ],
+  "usuario": [
+    {
+      "id": 1,
+      "nickname": "david",
+      "password": "3328"
+    },
+    {
+      "id": 2,
+      "nickname": "fredy",
+      "password": "fredy"
+    },
+    {
+      "nickname": "samuel",
+      "password": "samuel",
+      "id": 3
+    },
+    {
+      "nickname": "samuel",
+      "password": "samuel",
+      "id": 4
     }
   ]
 }
