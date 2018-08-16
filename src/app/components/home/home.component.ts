@@ -9,7 +9,10 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  public usuario
+
   ngOnInit() {
+    this.usuario = localStorage.getItem('nickname');
   }
 
 }

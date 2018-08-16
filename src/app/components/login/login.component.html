@@ -1,4 +1,7 @@
 <div class="alert alert-danger" *ngIf="mensaje">{{mensaje}}</div>
+<ng-template #noValido class="alert alert-danger">
+  
+</ng-template>
 <form [formGroup]="formLogin" (submit)="getLogin(formLogin.value)">
   <div class="form-group">
     <label for="">Nickname: </label>

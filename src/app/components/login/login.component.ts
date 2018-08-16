@@ -34,16 +34,30 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.mensaje = localStorage.getItem('error');
+    localStorage.removeItem('nickname');
   }
 
-  getLogin(user: User){
-    const autenticado = this._loginService.autentidar(user);
-    if(autenticado){
-      this._router.navigate(['home']);
+  getLogin(user: User){    
+    localStorage.setItem('nickname',user.nickname);
+    this._loginService.autentidar(user).subscribe(
+      this.error.bind(this),
+      this.validar.bind(this)
+    )
+  }
+
+  validar(data: any){
+    console.log('validar')
+    if(data.status == 200){
+      localStorage.removeItem('error');
+      this._router.navigate(['/home'])
     }
-    else
-    {
-      this.mensaje = "Usuario o Contraseña Erroneo";
+    else{
+      this.mensaje = 'Usuario o Contrase;a Incorrectos'
     }
+  }
+  error(data: any){
+    console.log('error')
+    console.log(data)
   }
 }

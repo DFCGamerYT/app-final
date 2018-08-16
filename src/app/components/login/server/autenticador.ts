@@ -10,7 +10,7 @@ export class Autenticador implements CanActivate{
     canActivate() {
       const autenticado = localStorage.getItem('nickname');
       console.log(autenticado);
-      if (autenticado === 'david') {
+      if (autenticado != null) {
         return true;
       } else {
         this._router.navigate(['/login'], {
@@ -18,6 +18,7 @@ export class Autenticador implements CanActivate{
             return: 'LogIn Required'
           }
         });
+        localStorage.setItem('error','LogIn Required');
         return false;
       }
     }

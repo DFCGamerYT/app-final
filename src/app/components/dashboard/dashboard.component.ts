@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Producto } from '../producto/model/producto';
 import { ProductoService } from './../producto/server/producto.service';
 
 import { ViewChild, ElementRef } from '@angular/core';

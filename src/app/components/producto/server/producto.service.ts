@@ -12,7 +12,7 @@ export class ProductoService {
 
   constructor(private _http: HttpClient) { }
   
-  private API_URL: string = "http://localhost:3000/producto";
+  private API_URL: string = "http://localhost:8080/producto";
 
   public getProductoList(): Observable<Producto[]>{
     return this._http.get<Producto[]>(this.API_URL);
