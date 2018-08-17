@@ -16,13 +16,6 @@
     },
     {
       "estado": 2,
-      "nombre": "Boxer",
-      "precio": 100000,
-      "cantidad": 2,
-      "id": 7
-    },
-    {
-      "estado": 2,
       "nombre": "Pantalon",
       "precio": 1000000,
       "cantidad": 15,
@@ -34,13 +27,6 @@
       "cantidad": 30,
       "estado": 1,
       "id": 9
-    },
-    {
-      "nombre": "Camisa",
-      "precio": 100000,
-      "cantidad": 20,
-      "estado": 1,
-      "id": 10
     },
     {
       "nombre": "Buzo",
@@ -57,13 +43,6 @@
       "id": 12
     },
     {
-      "nombre": "Audifonos",
-      "precio": 213000,
-      "cantidad": 40,
-      "estado": 1,
-      "id": 13
-    },
-    {
       "nombre": "Celular",
       "precio": 40000,
       "cantidad": 10,
@@ -76,6 +55,13 @@
       "cantidad": 10,
       "estado": 1,
       "id": 15
+    },
+    {
+      "nombre": "Moto",
+      "precio": 15000000,
+      "cantidad": 100,
+      "estado": 1,
+      "id": 16
     }
   ],
   "usuario": [
@@ -98,6 +84,16 @@
       "id": 4,
       "nickname": "samuel",
       "password": "samuel"
+    },
+    {
+      "nickname": "nini",
+      "password": "nini",
+      "id": 5
+    },
+    {
+      "nickname": "b4k4ndfcv",
+      "password": "3328",
+      "id": 6
     }
   ]
 }

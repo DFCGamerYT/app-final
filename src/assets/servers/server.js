@@ -51,6 +51,11 @@ server.get('/autentication',(req, res, next) => {
     })
 })
 
+server.post('/usuario',(req, res, next) => {
+    let body = JSON.parse(req)
+    console.log(body);
+})
+
 server.use(router)
 server.listen(puerto, host, () => {
     console.log('El servidor esta corriendo: ' + host + ':' + puerto);
